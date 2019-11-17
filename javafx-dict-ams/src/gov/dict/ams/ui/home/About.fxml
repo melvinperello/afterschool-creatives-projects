@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" stylesheets="@../../../../../storage/css/home.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="114.0" prefWidth="1200.0" style="-fx-background-color: #4172AA;">
+         <children>
+            <HBox maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+               <children>
+                  <ImageView fx:id="imgvw_logo" fitHeight="120.0" fitWidth="383.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../storage/drawable/DICT%20Commercial%20Logo%20for%20dark%20backgrounds.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <VBox alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label fx:id="lbl_event_name" alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="44.0" prefWidth="131.0" text="Event Name" textAlignment="CENTER" textFill="WHITE" VBox.vgrow="ALWAYS">
+                           <font>
+                              <Font name="System Bold" size="23.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lbl_venue" alignment="CENTER" layoutX="260.0" layoutY="60.0" maxWidth="1.7976931348623157E308" text="Venue" textFill="WHITE" VBox.vgrow="ALWAYS">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lbl_date" alignment="CENTER" layoutX="328.0" layoutY="97.0" maxWidth="1.7976931348623157E308" text="Date" textFill="WHITE" VBox.vgrow="ALWAYS">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <VBox alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="120.0" prefWidth="215.0" style="-fx-border-width: 3;">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="41.0" prefWidth="75.0">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../storage/drawable/icons8-customer-filled-50.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="lbl_male_count" maxWidth="1.7976931348623157E308" prefHeight="41.0" prefWidth="59.0" text="50" textFill="WHITE" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="Calibri" size="22.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="15.0" layoutY="53.0" prefHeight="41.0" prefWidth="75.0">
+                     <children>
+                        <ImageView fitHeight="51.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../storage/drawable/icons8-person-female-filled-50.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="lbl_female_count" maxWidth="1.7976931348623157E308" prefHeight="41.0" prefWidth="59.0" text="50" textFill="WHITE" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="Calibri" size="22.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="5.0" top="5.0" />
+         </padding>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #fff;" VBox.vgrow="ALWAYS">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="30.0" right="20.0" top="5.0" />
+                     </VBox.margin>
+                     <children>
+                        <VBox prefHeight="506.0" prefWidth="595.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label layoutX="10.0" layoutY="10.0" text="FAQs">
+                                 <font>
+                                    <Font name="System Bold" size="29.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="10.0" layoutY="64.0" text="Frequently Asked Questions" textFill="#545353">
+                                 <font>
+                                    <Font name="System Bold" size="22.0" />
+                                 </font>
+                              </Label>
+                              <VBox fx:id="tbl_view" prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="506.0" prefWidth="465.0">
+                           <children>
+                              <Label text="Attendee Management System (AMS)">
+                                 <font>
+                                    <Font name="Century Gothic Bold" size="20.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="38.0" layoutY="10.0" maxHeight="1.7976931348623157E308" prefHeight="152.0" prefWidth="465.0" text="This is the Attendee Management System. Here you can add, update or delete attendees, export them into excel file and print their names in the uploaded certificate." textAlignment="CENTER" wrapText="true">
+                                 <font>
+                                    <Font name="Century Gothic" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label text="About the Developer" textFill="#e94c3d">
+                                 <font>
+                                    <Font name="Century Gothic Bold" size="28.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="25.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="Joemar N. de la Cruz">
+                                 <font>
+                                    <Font name="Century Gothic Bold" size="16.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="15.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label layoutX="100.0" layoutY="322.0" text="https://www.facebook.com/joemardc98" textFill="#171717">
+                                 <font>
+                                    <Font name="Century Gothic" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label text="+63975-540-6896">
+                                 <font>
+                                    <Font name="Century Gothic" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label text="joemardc98@gmail.com">
+                                 <font>
+                                    <Font name="Century Gothic" size="13.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="74.0" fitWidth="370.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../storage/drawable/afterschoolcreatives/afterschool-creatives-logo_no_bg.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <Label layoutX="221.0" layoutY="330.0" text="https://www.facebook.com/afterschoolcreatives" textFill="#e94c3d">
+                                 <font>
+                                    <Font name="Century Gothic Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Team" textFill="#e94c3d">
+                                 <font>
+                                    <Font name="Century Gothic Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Jhon Melvin N. Perello">
+                                 <font>
+                                    <Font name="Century Gothic Bold" size="16.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="+63995-803-9546">
+                                 <font>
+                                    <Font name="Century Gothic" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label text="afterschoolcreatives@gmail.com">
+                                 <font>
+                                    <Font name="Century Gothic" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Ericka Joy G. dela Cruz">
+                                 <font>
+                                    <Font name="Century Gothic Bold" size="16.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="+63926-170-3113">
+                                 <font>
+                                    <Font name="Century Gothic" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label text="erickadelacruz2197@gmail.com">
+                                 <font>
+                                    <Font name="Century Gothic" size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="0.0" prefWidth="1200.0" spacing="20.0">
+                     <children>
+                        <VBox maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                           <children>
+                              <ImageView fitHeight="81.0" fitWidth="164.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../storage/drawable/afterschoolcreatives/afterschool-creatives-logo_no_bg.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox alignment="CENTER_LEFT" prefHeight="39.0" prefWidth="453.0">
+                           <children>
+                              <JFXButton fx:id="btn_view_pdf" prefHeight="39.0" prefWidth="139.0" text="View PDF" textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                        </VBox>
+                        <JFXButton fx:id="btn_back" prefHeight="31.0" prefWidth="133.0" text="Home" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </JFXButton>
+                     </children>
+                     <padding>
+                        <Insets right="20.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </children></HBox>
+   </children>
+</VBox>
